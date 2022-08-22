@@ -1,50 +1,46 @@
 <template>
   <div>
-    <v-card class="skills" width="100%" height="600px" color="#252839">
-      <v-card-text>
+<div class="skills">
         <div class="label">
           <label><h1>Skills</h1></label>
         </div>
-      </v-card-text>
-      <v-card-text>
         <div class="row">
           <div class="item">
-            <img src="./Tech-Icon/php-icon.png" />
+            <img src="../Tech-Icon/php-icon.png" />
             <label><h4>PHP</h4></label>
           </div>
           <div class="item">
-            <img src="./Tech-Icon/laravel-icon.png" />
+            <img src="../Tech-Icon/laravel-icon.png" />
             <label><h4>Laravel</h4></label>
           </div>
           <div class="item">
-            <img src="./Tech-Icon/vuejs-icon.png" />
+            <img src="../Tech-Icon/vuejs-icon.png" />
             <label><h4>Vue.js</h4></label>
           </div>
           <div class="item">
-            <img src="./Tech-Icon/js-icon.png" />
+            <img src="../Tech-Icon/js-icon.png" />
             <label><h4>JavaScript</h4></label>
           </div>
 
           <div class="item">
-            <img src="./Tech-Icon/css-Icon.png" />
+            <img src="../Tech-Icon/css-Icon.png" />
             <label><h4>CSS</h4></label>
           </div>
 
           <div class="item">
-            <img src="./Tech-Icon/html-icon.png" />
+            <img src="../Tech-Icon/html-icon.png" />
             <label><h4>HTML</h4></label>
           </div>
           <div class="item">
-            <img src="./Tech-Icon/mysql-icon.png" />
+            <img src="../Tech-Icon/mysql-icon.png" />
             <label><h4>MySQL</h4></label>
           </div>
           <div class="item">
-            <img src="./Tech-Icon/git logo.png" />
+            <img src="../Tech-Icon/git logo.png" />
             <label><h4>Git</h4></label>
           </div>
         </div>
-      </v-card-text>
-    </v-card>
+        </div>
   </div>
 </template>
 <script>
@@ -57,28 +53,30 @@ export default {
 };
 </script>
 <style scoped>
-.skills{
+.skills {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
+  height: 600px;
+  background-color: #242c64;
 }
-h1{
+h1 {
   padding: 30px;
   margin-top: 30px;
   font-size: 50px;
-  color: #01fe87;
-  
+  color: #daece4;
 }
-h4{
-  color: #01fe87;
+h4 {
+  color: #daece4;
 }
 
-.row{
-    display: flex;
-    justify-content: center;
-    margin: auto;
+.row {
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
-.item{
+.item {
   margin: 50px;
 }
 img {
@@ -88,28 +86,28 @@ img {
 
 @media only screen and (max-width: 720px) {
   img {
-  width: 50px;
-  height: 50px;
-}
+    width: 50px;
+    height: 50px;
+  }
 
-h1{
-  font-size: 40px;
-}
-.item{
-  margin: 30px;
-}
+  h1 {
+    font-size: 40px;
+  }
+  .item {
+    margin: 30px;
+  }
 }
 @media only screen and (max-width: 370px) {
   img {
-  width: 40px;
-  height: 40px;
-}
+    width: 40px;
+    height: 40px;
+  }
 
-h1{
-  font-size: 30px;
-}
-.item{
-  margin: 20px;
-}
+  h1 {
+    font-size: 30px;
+  }
+  .item {
+    margin: 20px;
+  }
 }
 </style>

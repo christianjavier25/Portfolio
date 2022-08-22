@@ -1,13 +1,7 @@
 <template>
-    <v-card class="acads" width="100%" height="500px" color="#252839">
+    <v-card class="acads" width="100%" height="500px" color="#242c64">
        <div class="title"> <v-card-title><h1>Acads and Achievement</h1></v-card-title></div>
-         <v-timeline>
-    <v-timeline-item>timeline item</v-timeline-item>
-    <v-timeline-item class="text-right">
-      timeline item
-    </v-timeline-item>
-    <v-timeline-item>timeline item</v-timeline-item>
-  </v-timeline>
+       
     </v-card>
 </template>
 <script>
@@ -17,7 +11,7 @@ export default {
 </script>
 <style scoped>
 h1{
-    color: #01fe87;
+    color: #daece4;
 
 }
 .title{
