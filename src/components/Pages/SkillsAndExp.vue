@@ -1,46 +1,46 @@
 <template>
   <div>
-<div class="skills">
-        <div class="label">
-          <label><h1>Skills</h1></label>
+    <div class="skills">
+      <div class="label">
+        <label><h1>Skills</h1></label>
+      </div>
+      <div class="row">
+        <div class="item">
+          <img src="../Tech-Icon/php-icon.png" /><br />
+          <label><h4>PHP</h4></label>
         </div>
-        <div class="row">
-          <div class="item">
-            <img src="../Tech-Icon/php-icon.png" />
-            <label><h4>PHP</h4></label>
-          </div>
-          <div class="item">
-            <img src="../Tech-Icon/laravel-icon.png" />
-            <label><h4>Laravel</h4></label>
-          </div>
-          <div class="item">
-            <img src="../Tech-Icon/vuejs-icon.png" />
-            <label><h4>Vue.js</h4></label>
-          </div>
-          <div class="item">
-            <img src="../Tech-Icon/js-icon.png" />
-            <label><h4>JavaScript</h4></label>
-          </div>
+        <div class="item">
+          <img src="../Tech-Icon/laravel-icon.png" /><br />
+          <label><h4>Laravel</h4></label>
+        </div>
+        <div class="item">
+          <img src="../Tech-Icon/vuejs-icon.png" /><br />
+          <label><h4>Vue.js</h4></label>
+        </div>
+        <div class="item">
+          <img src="../Tech-Icon/js-icon.png" /><br />
+          <label><h4>JavaScript</h4></label>
+        </div>
 
-          <div class="item">
-            <img src="../Tech-Icon/css-Icon.png" />
-            <label><h4>CSS</h4></label>
-          </div>
+        <div class="item">
+          <img src="../Tech-Icon/css-Icon.png" /><br />
+          <label><h4>CSS</h4></label>
+        </div>
 
-          <div class="item">
-            <img src="../Tech-Icon/html-icon.png" />
-            <label><h4>HTML</h4></label>
-          </div>
-          <div class="item">
-            <img src="../Tech-Icon/mysql-icon.png" />
-            <label><h4>MySQL</h4></label>
-          </div>
-          <div class="item">
-            <img src="../Tech-Icon/git logo.png" />
-            <label><h4>Git</h4></label>
-          </div>
+        <div class="item">
+          <img src="../Tech-Icon/html-icon.png" /><br />
+          <label><h4>HTML</h4></label>
         </div>
+        <div class="item">
+          <img src="../Tech-Icon/mysql-icon.png" /><br />
+          <label><h4>MySQL</h4></label>
         </div>
+        <div class="item">
+          <img src="../Tech-Icon/git logo.png" /><br />
+          <label><h4>Git</h4></label>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -58,7 +58,7 @@ export default {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 600px;
+  height: 700px;
   background-color: #242c64;
 }
 h1 {
@@ -78,23 +78,31 @@ h4 {
 }
 .item {
   margin: 50px;
+  width: 120px;
 }
 img {
   width: 100px;
   height: 100px;
 }
-
-@media only screen and (max-width: 720px) {
-  img {
-    width: 50px;
-    height: 50px;
+@media only screen and (max-width: 875px) {
+  .item {
+    margin: 30px;
+    width: 120px;
   }
-
+}
+@media only screen and (max-width: 720px) {
+  .item {
+    margin: 30px;
+    width: 120px;
+  }
   h1 {
     font-size: 40px;
   }
   .item {
     margin: 30px;
+  }
+  .skills {
+    height: 800px;
   }
 }
 @media only screen and (max-width: 370px) {

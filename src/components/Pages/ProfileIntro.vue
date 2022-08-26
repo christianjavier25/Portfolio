@@ -1,9 +1,12 @@
 <template>
   <div class="profile-Intro">
     <div class="name">
-      <h1>{{ left }}{{ right }}</h1>
+      <h1>
+        <font color="#ffd700">&#8705;</font>j<font color="#ffd700">&gt;</font>
+      </h1>
+
       <br />
-      <h1 data-text="CHRISTIAN ">CHRISTIAN JAVIER</h1>
+      <h1>CHRISTIAN JAVIER</h1>
       <span><h3>BS Information Technology | Web Developer</h3></span>
       <div class="icons">
         <a href="https://www.facebook.com/kulokoy999" target="_blank"
@@ -21,14 +24,12 @@
             alt=""
         /></a>
       </div>
-      <div class="btn">
-        <v-btn color="#daece4"
-          ><a
-            href="https://drive.google.com/file/d/1jRrIzmQz1bGEvmVtwbGaJUaCMmlKg3pq/view?usp=sharing"
-            class="btn-resume"
-            target="_blank"
-            >My Resume</a
-          ></v-btn
+      <div class="resume">
+        <a
+          href="https://drive.google.com/file/d/10HjqjQJGFDRdZ_p_oYV15R6_IVUNzvAv/view?usp=sharing"
+          class="btn-resume"
+          target="_blank"
+          ><button class="mainBtn">My resume</button></a
         >
       </div>
     </div>
@@ -39,10 +40,7 @@ export default {
   name: "Profile-Intro",
   components: {},
   data() {
-    return {
-      right: "j>",
-      left: "<",
-    };
+    return {};
   },
 };
 </script>
@@ -55,12 +53,26 @@ export default {
   height: 700px;
   background-color: #242c64;
 }
-.btn {
+.resume {
   margin-top: 100px;
   color: #242c64;
 }
 .btn-resume {
   text-decoration: none;
+}
+.mainBtn {
+  background-color: #daece4;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5%;
+  width: 150px;
+  color: #242c64;
+  font-weight: bold;
+}
+.mainBtn:hover {
+  opacity: 70%;
 }
 .name h1 {
   color: #daece4;

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="aboutMe">
+  <div class="aboutMe">
     <section class="left-aboutMe">
       <div class="about">
         <span
@@ -7,23 +7,18 @@
         >
         <span
           ><p>
-            I am an independent and self-motivated BS Information Technology
-            graduate, good at analytical thinking and problem-solving. I'm
-            looking for an entry-level position in Web development where I can
-            utilize my skills and the extensive knowledge I have gained during
-            my course.
+            Hello, I'm Christian Javier an independent and self-motivated BS
+            Information Technology fresh graduate, a web developer, good at
+            analytical thinking and problem-solving. I love coding, creating
+            functions, and debugging.
           </p></span
         >
       </div>
     </section>
     <section class="right-aboutMe">
-      <div class="mypic">
-        <span>
-          <img src="../img/formalpic.jpg" />
-        </span>
-      </div>
+      <div class="mypic"><img src="../img/formalpic.jpg" /></div>
     </section>
-  </v-card>
+  </div>
 </template>
 <script>
 export default {
@@ -35,7 +30,7 @@ export default {
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: #daece4;
   height: 600px;
   width: 100%;
@@ -55,15 +50,9 @@ export default {
   font-size: 25px;
   font-weight: 50;
 }
-.right-aboutMe {
-  position: absolute;
-  right: 80px;
-}
-.left-aboutMe {
-  position: absolute;
-  left: 150px;
-}
+
 .mypic img {
+  display: flex;
   width: 350px;
   border-radius: 5%;
   right: 100px;
@@ -76,9 +65,7 @@ export default {
     width: 300px;
     border-radius: 5%;
   }
-  .left-aboutMe {
-    left: 80px;
-  }
+
   .about h1 {
     font-size: 30px;
   }
@@ -89,20 +76,9 @@ export default {
 
 @media only screen and (max-width: 875px) {
   .about {
-    width: 500px;
+    width: 400px;
   }
-  .right-aboutMe {
-    right: auto;
-    bottom: 20px;
-  }
-  .left-aboutMe {
-    left: auto;
-    top: 20px;
-  }
-  .mypic img {
-    width: 200px;
-    border-radius: 5%;
-  }
+
   .about h1 {
     font-size: 35px;
   }
@@ -114,25 +90,14 @@ export default {
 @media only screen and (max-width: 700px) {
   /* For mobile phones: */
   .about {
-    width: 400px;
+    width: 300px;
   }
-  .right-aboutMe {
-    right: auto;
-    bottom: 20px;
-  }
-  .left-aboutMe {
-    left: auto;
-    top: 40px;
-  }
-  .mypic img {
-    width: 200px;
-    border-radius: 5%;
-  }
+
   .about h1 {
     font-size: 30px;
   }
   .about p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -141,14 +106,7 @@ export default {
   .about {
     width: 280px;
   }
-  .right-aboutMe {
-    right: auto;
-    bottom: 10px;
-  }
-  .left-aboutMe {
-    left: auto;
-    top: 30px;
-  }
+
   .mypic img {
     width: 200px;
     border-radius: 5%;

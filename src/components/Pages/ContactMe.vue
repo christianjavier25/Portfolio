@@ -12,53 +12,55 @@
         <v-alert class="successMessage" dense type="error" v-if="formError"
           >Thank You {{ formError }}</v-alert
         >
+        <div class="form-inputs">
+          <div class="form-group">
+            <span
+              ><label><h5>Name:</h5></label></span
+            >
+            <b-form-input
+              v-model="name"
+              required
+              placeholder="Enter your fullname ..."
+            />
+          </div>
+          <div class="form-group">
+            <span
+              ><label><h5>Email:</h5></label></span
+            >
+            <b-form-input
+              type="email"
+              v-model="email"
+              required
+              placeholder="Enter your email ..."
+            />
+          </div>
+          <div class="form-group">
+            <span
+              ><label><h5>Phone Number:</h5></label></span
+            >
+            <VuePhoneNumberInput
+              v-model="phoneNumber"
+              fetch-country
+              :only-countries="['PH']"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <span
+              ><label><h5>Message:</h5></label></span
+            >
+            <b-textarea
+              v-model="message"
+              required
+              placeholder="Write your message ..."
+            />
+          </div>
+        </div>
+        <br />
 
-        <div class="form-group">
-          <span
-            ><label><h4>Name</h4></label></span
-          ><br />
-          <v-text-field v-model="name" filled outlined dense required />
-        </div>
-        <div class="form-group">
-          <span
-            ><label><h4>Email</h4></label></span
-          ><br />
-          <v-text-field
-            type="email"
-            v-model="email"
-            filled
-            dense
-            outlined
-            required
-          />
-        </div>
-        <div class="form-group">
-          <span
-            ><label><h4>Phone Number</h4></label></span
-          ><br />
-
-          <!-- <v-text-field
-            v-model="phoneNumber"
-            filled
-            dense
-            outlined
-            number
-            required
-          /> -->
-        </div>
-        <VuePhoneNumberInput
-          v-model="phoneNumber"
-          fetch-country
-          :only-countries="['PH']"
-          required
-        />
-        <div class="form-group">
-          <span
-            ><label><h4>Message</h4></label></span
-          ><br />
-          <v-textarea v-model="message" filled outlined required />
-        </div>
-        <v-btn color="#f5751f" type="submit"><strong>Send</strong></v-btn>
+        <v-btn class="send" color="#f5751f" type="submit"
+          ><strong>Send</strong></v-btn
+        >
         <v-btn class="resetBtn" color="#a8b0b6" @click="reset()"
           ><strong>Reset</strong></v-btn
         >
@@ -161,7 +163,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 750px;
+  height: 800px;
 }
 .teal {
   background-color: teal;
@@ -169,23 +171,42 @@ export default {
 .resetBtn {
   margin-left: 50px;
 }
+.resetBtn:hover {
+  opacity: 70%;
+}
+.send:hover {
+  opacity: 70%;
+}
 .successMessage {
   background-color: rgb(147, 255, 147);
   color: black;
+}
+.form-inputs {
+  text-align: left;
+}
+.form-group {
+  margin-top: 20px;
+}
+.form-control {
+  border: 1px solid;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: black;
 }
 .contact-Form {
   position: absolute;
   right: 50px;
   background-color: white;
-  padding: 20px;
+  padding: 50px;
   align-items: center;
   justify-content: center;
   margin-bottom: 110px;
   width: 400px;
 }
-
-.form-group h4 {
-  position: absolute;
+.vue-phone-number-input {
+  border: 1px solid;
+  border-radius: 5px;
 }
 .copyright {
   position: absolute;
@@ -217,6 +238,12 @@ export default {
   .contact-Form {
     right: auto;
     width: 300px;
+  }
+  .resetBtn {
+    margin-left: 10px;
+  }
+  button {
+    width: 50px;
   }
 }
 @media only screen and (max-width: 315px) {
