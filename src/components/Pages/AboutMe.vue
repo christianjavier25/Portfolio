@@ -16,7 +16,22 @@
       </div>
     </section>
     <section class="right-aboutMe">
-      <div class="mypic"><img src="../img/formalpic.jpg" /></div>
+      <div class="mypic">
+        <div class="about-me2">
+          <span
+            ><label> <h1>About Me</h1></label></span
+          >
+          <span
+            ><p>
+              Hello, I'm Christian Javier an independent and self-motivated BS
+              Information Technology fresh graduate, a web developer, good at
+              analytical thinking and problem-solving. I love coding, creating
+              functions, and debugging.
+            </p></span
+          >
+        </div>
+        <img src="../img/formalpic.jpg" />
+      </div>
     </section>
   </div>
 </template>
@@ -34,6 +49,9 @@ export default {
   background-color: #daece4;
   height: 600px;
   width: 100%;
+}
+.about-me2 {
+  display: none;
 }
 .about {
   width: 450px;
@@ -92,7 +110,9 @@ export default {
   .about {
     width: 300px;
   }
-
+  .mypic img {
+    width: 200px;
+  }
   .about h1 {
     font-size: 30px;
   }
@@ -100,37 +120,57 @@ export default {
     font-size: 20px;
   }
 }
+@media only screen and (max-width: 550px) {
+  /* For mobile phones: */
+  .aboutMe {
+    justify-content: center;
+  }
+  .about-me2 {
+    display: block;
+    width: 400px;
+  }
+  .about {
+    display: none;
+  }
+  .mypic img {
+    width: 200px;
+    margin: auto;
+  }
+  .about-me2 h1 {
+    font-size: 30px;
+  }
+  .about-me2 p {
+    font-size: 20px;
+    text-align: justify;
+  }
+}
 
 @media only screen and (max-width: 400px) {
   /* For mobile phones: */
-  .about {
-    width: 280px;
+  .about-me2 {
+    display: block;
+    width: 300px;
   }
-
-  .mypic img {
-    width: 200px;
-    border-radius: 5%;
-  }
-  .about h1 {
+  .about-me2 h1 {
     font-size: 30px;
   }
-  .about p {
+  .about-me2 p {
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 330px) {
   /* For mobile phones: */
-  .about {
-    width: 200px;
+  .about-me2 {
+    width: 250px;
   }
 
-  .about h1 {
+  .about-me2 h1 {
     font-size: 28px;
   }
-  .about p {
+  .about-me2 p {
     font-size: 16px;
   }
-  .mypic img {
+  img {
     width: 150px;
     border-radius: 5%;
   }

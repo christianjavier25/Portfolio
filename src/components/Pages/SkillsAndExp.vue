@@ -105,10 +105,22 @@ img {
     height: 800px;
   }
 }
+@media only screen and (max-width: 570px) {
+  img {
+    width: 70px;
+    height: 70px;
+  }
+  .skills {
+    height: 900px;
+  }
+}
 @media only screen and (max-width: 370px) {
   img {
     width: 40px;
     height: 40px;
+  }
+  .skills {
+    height: 700px;
   }
 
   h1 {
@@ -116,6 +128,25 @@ img {
   }
   .item {
     margin: 20px;
+  }
+}
+@media only screen and (max-width: 318px) {
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  .skills {
+    height: 700px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  .item {
+    width: 70px;
   }
 }
 </style>

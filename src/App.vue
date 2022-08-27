@@ -1,11 +1,17 @@
-
 <template>
   <div id="app">
-       <router-view></router-view>
+    <myPages />
+    <!-- <router-view></router-view> -->
   </div>
 </template>
-<script setup>
-
+<script>
+import myPages from "./components/myPage.vue";
+export default {
+  components: { myPages },
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style>
@@ -14,5 +20,4 @@
   font-family: "Poppons", sans-serif;
   overflow: hidden;
 }
-
 </style>
