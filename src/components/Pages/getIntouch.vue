@@ -1,10 +1,10 @@
-<template>
-  <v-footer class="GetInTouch">
-    <div class="getinTouchBG">
-      <img src="../project-img/contacticon.png" alt="Bg">
-    </div>
-    <div class="form-frame">
-      <form @submit.prevent="sendEmail">
+<!-- <template>
+    <v-footer class="footer" padless>
+      <section class="left">
+        <img class="back-img" src="../img/email-ga6a8f43ad_1280.png" />
+      </section>
+      <v-card class="contact-Form">
+        <form @submit.prevent="sendEmail">
           <h3>GET IN TOUCH</h3>
           <v-alert class="successMessage" dense type="success" v-if="senderName"
             >Thank You {{ senderName }}</v-alert
@@ -65,8 +65,8 @@
             ><strong>Reset</strong></v-btn
           >
         </form>
-    </div>
-    <v-card dark color="#1E56A0" class="myfooter" width="100%">
+      </v-card>
+      <v-card dark class="copyright" width="100%">
         <v-card-text class="py-2 white--text text-center align-items-center">
           <div class="icons">
             <a href="https://www.facebook.com/kulokoy999" target="_blank"
@@ -90,10 +90,10 @@
           {{ new Date().getFullYear() }} — <strong>Christian Javier</strong>
         </v-card-text>
       </v-card>
-  </v-footer>
-</template>
-<script>
-import emailjs from "@emailjs/browser";
+    </v-footer>
+  </template>
+  <script>
+  import emailjs from "@emailjs/browser";
   import VuePhoneNumberInput from "vue-phone-number-input";
   
   export default {
@@ -156,42 +156,19 @@ import emailjs from "@emailjs/browser";
       },
     },
   };
-</script>
-<style scoped>
-.GetInTouch{
-  width: 100%;
-  height: 995px;
-  background-color: #f6f6f6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-}
-.form-frame{
-  display: flex;
-  width: 400px;
-  height: 600px;
-  padding: 50px;
-  background-color: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 1px 5px #b3b0b0;
-  align-items: center;
-  text-align: center;
-}
-.myfooter{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.socialMedia {
-    width: 50px;
-    margin-left: 20px;
+  </script>
+  <style scoped>
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 800px;
   }
-textarea{
-  max-height: 100px;
-}
-.resetBtn {
+  .teal {
+    background-color: teal;
+  }
+  .resetBtn {
     margin-left: 50px;
   }
   .resetBtn:hover {
@@ -217,41 +194,68 @@ textarea{
     box-shadow: none;
     border-color: black;
   }
+  .contact-Form {
+    position: absolute;
+    right: 50px;
+    background-color: white;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 110px;
+    width: 400px;
+  }
   .vue-phone-number-input {
     border: 1px solid;
     border-radius: 5px;
   }
-@media only screen and (max-width: 1000px){
-  .getinTouchBG img{
-    width: 400px;
+  .copyright {
+    position: absolute;
+    bottom: 0;
   }
-}
-@media only screen and (max-width: 850px){
-  .getinTouchBG img{
-    width: 300px;
+  .back-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
-}
-@media only screen and (max-width: 765px){
-  .getinTouchBG img{
-    display: none;
-  }
-  .GetInTouch{
-  justify-content: center;
-}
-}
-@media only screen and (max-width: 665px){
-  .GetInTouch{
-    padding: 0;
-  }
-.resetBtn {
-    margin-left: 40px;
+  .socialMedia {
     width: 50px;
+    margin-left: 20px;
   }
-  .send{
-    width: 50px;
+  .socialMedia:hover {
+    opacity: 0.5;
+    cursor: pointer;
   }
-  b, strong{
-    font-size: 12px;
+  
+  @media only screen and (max-width: 500px) {
+    .contact-Form {
+      right: auto;
+      width: 350px;
+    }
   }
-}
-</style>
+  @media only screen and (max-width: 380px) {
+    .contact-Form {
+      right: auto;
+      width: 300px;
+    }
+    .resetBtn {
+      margin-left: 10px;
+    }
+    button {
+      width: 50px;
+    }
+  }
+  @media only screen and (max-width: 315px) {
+    .contact-Form {
+      right: auto;
+      width: 270px;
+    }
+  }
+  @media only screen and (max-width: 275px) {
+    .contact-Form {
+      right: auto;
+      width: 250px;
+    }
+  }
+  </style> -->

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <myPages />
+    <myPages/>
     <!-- <router-view></router-view> -->
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
 <style>
 * {
   box-sizing: border-box;
-  font-family: "Poppons", sans-serif;
+  font-family: 'Outfit', sans-serif;
   overflow: hidden;
 }
 </style>

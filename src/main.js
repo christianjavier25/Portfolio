@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
-import Vuetify from "vuetify";
-import "vuetify/dist/vuetify.min.css";
+import vuetify from '@/plugins/vuetify' // path to vuetify export
+import 'vuetify/dist/vuetify.min.css'
 // import VueRouter from "vue-router";
 // import Routes from "./routes";
 import "vue-phone-number-input/dist/vue-phone-number-input.css";
@@ -14,7 +14,6 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 // Vue.use(VueRouter);
-Vue.use(Vuetify);
 
 // const router = new VueRouter({
 //   routes: Routes,
@@ -23,7 +22,7 @@ Vue.use(Vuetify);
 Vue.config.productionTip = false;
 
 new Vue({
-  Vuetify,
+  vuetify,
   render: (h) => h(App),
   // router: router,
 }).$mount("#app");

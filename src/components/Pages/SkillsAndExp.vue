@@ -4,7 +4,8 @@
       <div class="label">
         <label><h1>Skills</h1></label>
       </div>
-      <div class="row">
+      <div class="skillFrame">
+        <div class="row">
         <div class="item">
           <img src="../Tech-Icon/php-icon.png" /><br />
           <label><h4>PHP</h4></label>
@@ -40,6 +41,7 @@
           <label><h4>Git</h4></label>
         </div>
       </div>
+      </div>
     </div>
   </div>
 </template>
@@ -54,99 +56,141 @@ export default {
 </script>
 <style scoped>
 .skills {
-  justify-content: center;
+  text-align: center;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 1024px;
+
+}
+.skillFrame{
+  background-color: #D6E4F0;
   align-items: center;
   text-align: center;
-  width: 100%;
-  height: 700px;
-  background-color: #242c64;
+  height: 100%;
+  padding: 100px;
 }
 h1 {
-  padding: 30px;
-  margin-top: 30px;
-  font-size: 50px;
-  color: #daece4;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 h4 {
-  color: #daece4;
+  color: #000000;
+  margin-top: 50px;
 }
 
 .row {
   display: flex;
-  justify-content: center;
-  margin: auto;
+  justify-content: space-around;
+  margin-top: 100px;
 }
 .item {
   margin: 50px;
-  width: 120px;
+  width: 160px;
 }
 img {
+  width: 150px;
+  height: 145px;
+}
+@media only screen and (max-width: 1200px) {
+  .item {
+    margin: 30px;
+  }
+  img {
   width: 100px;
-  height: 100px;
+  height:95px;
+}
+}
+@media only screen and (max-width: 1080px) {
+  .item {
+    margin: 30px;
+    width: 150px;
+  }
+  img {
+  width: 80px;
+  height: 75px;
+}
 }
 @media only screen and (max-width: 875px) {
   .item {
     margin: 30px;
-    width: 120px;
-  }
-}
-@media only screen and (max-width: 720px) {
-  .item {
-    margin: 30px;
-    width: 120px;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  .item {
-    margin: 30px;
-  }
-  .skills {
-    height: 800px;
-  }
-}
-@media only screen and (max-width: 570px) {
-  img {
-    width: 70px;
-    height: 70px;
-  }
-  .skills {
-    height: 900px;
-  }
-}
-@media only screen and (max-width: 370px) {
-  img {
-    width: 40px;
-    height: 40px;
-  }
-  .skills {
-    height: 700px;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-  .item {
-    margin: 20px;
-  }
-}
-@media only screen and (max-width: 318px) {
-  img {
-    width: 50px;
-    height: 50px;
-  }
-  .skills {
-    height: 700px;
-  }
-
-  h1 {
-    font-size: 30px;
+    width: 100px;
   }
   h4 {
-    font-size: 12px;
-  }
+    font-size: 18px;
+}
+  img {
+  width: 70px;
+  height: 65px;
+}
+.skillFrame{
+  padding: 70px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+}
+@media only screen and (max-width: 680px) {
   .item {
-    width: 70px;
+    margin: 30px;
+    width: 100px;
   }
+  img {
+  width: 60px;
+  height: 55px;
+}
+h4 {
+    font-size: 16px;
+}
+.skillFrame{
+  padding: 50px;
+}
+}
+@media only screen and (max-width: 605px) {
+  .item {
+    margin: 30px;
+    width: 100px;
+  }
+  img {
+  width: 50px;
+  height: 45px;
+}
+.skillFrame{
+  padding: 20px;
+}
+}
+@media only screen and (max-width: 560px) {
+  .item {
+    margin: 30px;
+    width: 100px;
+  }
+  img {
+  width: 40px;
+  height: 39px;
+}
+}
+@media only screen and (max-width: 500px) {
+  .row{
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .item {
+    margin: 30px;
+    width: 80px;
+  }
+  h4 {
+    font-size: 14px;
+}
+}
+@media only screen and (max-width: 295px) {
+  .item {
+    margin: 30px;
+    width: 60px;
+  }
+  h4 {
+    font-size: 10px;
+}
 }
 </style>

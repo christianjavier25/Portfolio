@@ -21,6 +21,7 @@
         </b-collapse>
       </div>
     </b-navbar>
+    
   </div>
 </template>
 <script>
@@ -32,7 +33,7 @@ export default {};
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
-  background-color: rgb(93, 109, 204);
+  background-color: #1E56A0;
   min-height: 60px;
 }
 .navbar-brand {
