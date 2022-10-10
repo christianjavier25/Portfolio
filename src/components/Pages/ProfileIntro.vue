@@ -21,7 +21,7 @@
       </div>
       <div class="resume">
         <a
-          href="https://drive.google.com/file/d/1zqhbQUulcvIuiXu2C0PIm5DahYVSQV4A/view?usp=sharing"
+          href="https://drive.google.com/file/d/1cXVQlfW_HCBGWpPHTW0dT_MHgT4xwnS1/view?usp=sharing"
           class="btn-resume"
           target="_blank"
           ><button class="mainBtn"> My resume</button></a
